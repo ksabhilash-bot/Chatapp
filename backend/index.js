@@ -8,7 +8,7 @@ import { connectDB } from './lib/db.js';
 import {app,server,io} from './lib/socketio.js'
 import path from "path"
 dotenv.config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 const __dirname=path.resolve()
 
 app.use(express.json())
